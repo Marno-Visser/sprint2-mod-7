@@ -4,7 +4,7 @@ from tweepy import Stream
  
 import logindetails
  
-# # # # TWITTER STREAMER # # # #
+#TWITTER STREAMER
 class TwitterStreamer():
     def __init__(self):
         pass
@@ -16,7 +16,7 @@ class TwitterStreamer():
         stream = Stream(auth, listener) 
         stream.filter(track=hash_tag_list)
 
-# # # # TWITTER STREAM LISTENER # # # #
+#TWITTER STREAM LISTENER
 class StdOutListener(StreamListener):
     def __init__(self, fetched_tweets_filename):
         self.fetched_tweets_filename = fetched_tweets_filename
